@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yorusitos Pastelería</title>
   <link rel="stylesheet" href="styles.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
 </head>
 <body>
   <header>
@@ -20,19 +21,45 @@
       </nav>
     </div>
   </header>
-
   <section class="hero">
-    <div class="container hero-text">
-      <h2>¡Endulzamos tu día!</h2>
-      <p>Pasteles artesanales, cupcakes y más... hechos con amor.</p>
-      <a href="#menu" class="btn">Ver nuestro menú</a>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>¡Endulzamos tu día!</h2>
+        <p>Pasteles artesanales, cupcakes y más... hechos con amor.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">Ver nuestro menú</a>
+          <a href="#contact" class="btn btn-secondary">Hacer un pedido</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://source.unsplash.com/600x400/?bakery,pastry" alt="Deliciosos pasteles de Yorusitos">
+      </div>
     </div>
   </section>
-
   <section id="about" class="about">
-    <div class="container">
-      <h2>Sobre Yorusitos</h2>
-      <p>Somos una pastelería peruana que combina tradición y creatividad para ofrecerte los postres más deliciosos. Cada bocado es una experiencia de amor y sabor.</p>
+    <div class="container about-content">
+      <div class="about-text">
+        <h2>Sobre Yorusitos</h2>
+        <p>Somos una pastelería peruana que combina tradición y creatividad para ofrecerte los postres más deliciosos. Cada bocado es una experiencia de amor y sabor.</p>
+        <p>Desde 2020, nuestra misión ha sido llevar dulzura y felicidad a cada hogar con productos frescos y artesanales.</p>
+        <div class="about-features">
+          <div class="feature">
+            <i class="fas fa-heart"></i>
+            <span>Hecho con amor</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-leaf"></i>
+            <span>Ingredientes naturales</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-star"></i>
+            <span>Calidad premium</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="https://source.unsplash.com/500x400/?baking,pastry-chef" alt="Nuestro equipo trabajando">
+      </div>
     </div>
   </section>
 
@@ -58,16 +85,45 @@
       </div>
     </div>
   </section>
-
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contáctanos</h2>
-      <form>
-        <input type="text" placeholder="Nombre" required />
-        <input type="email" placeholder="Correo electrónico" required />
-        <textarea placeholder="Tu mensaje" required></textarea>
-        <button type="submit">Enviar mensaje</button>
-      </form>
+      <div class="contact-wrapper">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name"><i class="fas fa-user"></i></label>
+            <input type="text" id="name" placeholder="Nombre" required />
+          </div>
+          <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i></label>
+            <input type="email" id="email" placeholder="Correo electrónico" required />
+          </div>
+          <div class="form-group">
+            <label for="message"><i class="fas fa-comment"></i></label>
+            <textarea id="message" placeholder="Tu mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Av. Arequipa 1234, Lima</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <span>+51 987 654 321</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <span>hola@yorusitos.com</span>
+          </div>
+          <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
